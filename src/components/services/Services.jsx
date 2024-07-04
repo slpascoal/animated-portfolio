@@ -1,6 +1,19 @@
 import { useRef } from "react";
 import "./services.scss";
 import { motion, useInView } from "framer-motion";
+import { FaSquareJs } from "react-icons/fa6";
+import { FaReact } from "react-icons/fa6";
+import { FaNodeJs } from "react-icons/fa6";
+import { FaWordpress } from "react-icons/fa6";
+import { FaElementor } from "react-icons/fa6";
+import { SiAdobephotoshop } from "react-icons/si";
+import { SiCanva } from "react-icons/si";
+import { BsMeta } from "react-icons/bs";
+import { SiGoogleads } from "react-icons/si";
+import { HiMiniAcademicCap } from "react-icons/hi2";
+import { FaPeopleGroup } from "react-icons/fa6";
+
+
 
 const variants = {
   initial: {
@@ -36,8 +49,8 @@ const Services = () => {
     >
       <motion.div className="textContainer" variants={variants}>
         <p>
-          I focus on helping your brand grow
-          <br /> and move forward
+          afinal, quem é
+          <br /> Silas Lopes Pascoal?
         </p>
         <hr />
       </motion.div>
@@ -45,14 +58,14 @@ const Services = () => {
         <div className="title">
           <img src="/people.webp" alt="" />
           <h1>
-            <motion.b whileHover={{color:"orange"}}>Unique</motion.b> Ideas
+            <motion.b whileHover={{color:"rebeccapurple"}}>Descubra</motion.b> um pouco
           </h1>
         </div>
         <div className="title">
           <h1>
-            <motion.b whileHover={{color:"orange"}}>For Your</motion.b> Business.
+            <motion.b whileHover={{color:"rebeccapurple"}}>sobre</motion.b> mim.
           </h1>
-          <button>WHAT WE DO?</button>
+          <button>EM BUSCA DA VAGA JÚNIOR</button>
         </div>
       </motion.div>
       <motion.div className="listContainer" variants={variants}>
@@ -60,53 +73,55 @@ const Services = () => {
           className="box"
           whileHover={{ background: "lightgray", color: "black" }}
         >
-          <h2>Branding</h2>
+          <h2>Tecnologias</h2>
+          <h3><FaSquareJs /> <FaReact /> <FaNodeJs /> <FaWordpress /> <FaElementor /></h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-            libero enim nisi aliquam consectetur expedita magni eius ex corrupti
-            animi! Ad nam pariatur assumenda quae mollitia libero repellat
-            explicabo maiores?
+            Possuo conhecimento em uma série de tecnologias e linguagens de programação. As principais são: Javascript, React, Node.js, Wordpress e Elementor.
           </p>
-          <button>Go</button>
+                             
+          <p><FaSquareJs /> <FaReact /> <FaNodeJs /> <FaWordpress /> <FaElementor /></p>
+           
+          
+          
         </motion.div>
         <motion.div
           className="box"
           whileHover={{ background: "lightgray", color: "black" }}
         >
-          <h2>Branding</h2>
+          <h2>Conhecimentos Diversos</h2>
+          <h3><SiAdobephotoshop /> <SiCanva /> <BsMeta /> <SiGoogleads /></h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-            libero enim nisi aliquam consectetur expedita magni eius ex corrupti
-            animi! Ad nam pariatur assumenda quae mollitia libero repellat
-            explicabo maiores?
+            Sempre fui uma pessoa que buscou novos aprendizados. Com isso, aprendi outras coisas como: Photoshop, Canva, Meta Business e Google Ads.
           </p>
-          <button>Go</button>
+
+          <p><SiAdobephotoshop /> <SiCanva /> <BsMeta /> <SiGoogleads /></p>
+          
         </motion.div>
         <motion.div
           className="box"
           whileHover={{ background: "lightgray", color: "black" }}
         >
-          <h2>Branding</h2>
+          <h2>Formação</h2>
+          <h3><HiMiniAcademicCap /></h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-            libero enim nisi aliquam consectetur expedita magni eius ex corrupti
-            animi! Ad nam pariatur assumenda quae mollitia libero repellat
-            explicabo maiores?
+          Possuo Ensino Superior Completo em Ciências da Computação pelo Centro Universitário Una.
           </p>
-          <button>Go</button>
+
+          <p><HiMiniAcademicCap /></p>
+          
         </motion.div>
         <motion.div
           className="box"
           whileHover={{ background: "lightgray", color: "black" }}
         >
-          <h2>Branding</h2>
+          <h2>Características  Pessoais</h2>
+          <h3><FaPeopleGroup /></h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-            libero enim nisi aliquam consectetur expedita magni eius ex corrupti
-            animi! Ad nam pariatur assumenda quae mollitia libero repellat
-            explicabo maiores?
+          Sou um indivíduo com aprendizado rápido, extrovertido, focado em minhas tarefas, comprometimento e proativo. Além disso, me caracterizo por ser algúem com forte espírito de equipe e inteligente emocionalmente.
           </p>
-          <button>Go</button>
+          
+          <p><FaPeopleGroup /></p>
+
         </motion.div>
       </motion.div>
     </motion.div>

@@ -31,10 +31,10 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        "service_94y20xo",
-        "template_v10u2oh",
+        "service_ehkkeac",
+        "template_q6bn5f5",
         formRef.current,
-        "pX_2hasGmGcuvjXIW"
+        "ib7dCGqF-RS87hrIU"
       )
       .then(
         (result) => {
@@ -99,16 +99,16 @@ const Contact = () => {
             />
           </svg>
         </motion.div>
-        <motion.form
+         <motion.form
           ref={formRef}
           onSubmit={sendEmail}
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ delay: 4, duration: 1 }}
         >
-          <input type="text" required placeholder="Name" name="name"/>
+          <input type="text" required placeholder="Nome" name="name"/>
           <input type="email" required placeholder="Email" name="email"/>
-          <textarea rows={8} placeholder="Message" name="message"/>
+          <textarea rows={8} placeholder="Mensagem" name="message"/>
           <button>Submit</button>
           {error && "Error"}
           {success && "Success"}

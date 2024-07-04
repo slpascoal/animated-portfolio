@@ -12,21 +12,21 @@ const App = () => {
   return (
     <div>
       <Cursor />
-      <section id="Homepage">
+      <section id="Home">
         <Navbar />
         <Hero />
       </section>
-      <section id="Services">
+      <section id="Sobre Mim">
         <Parallax type="services" />
       </section>
       <section>
         <Services />
       </section>
-      <section id="Portfolio">
+      <section id="Portfólio">
         <Parallax type="portfolio" />
       </section>
       <Portfolio />
-      <section id="Contact">
+      <section id="Contato">
         <Contact />
       </section>
       {/* Framer Motion Crash Course */}
